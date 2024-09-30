@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 50px; /* Set a fixed width for the images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Optional: to make the images circular */
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .icon {
+            font-size: 18px; /* Adjust size for better visibility */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employee Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>e_id</th>
+                <th>e_name</th>
+                <th>e_sal</th>
+                <th colspan="2">e_department & e_designation</th> <!-- colspan added -->
+                <th>e_image</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Department</th> <!-- New header for Department -->
+                <th>Designation</th> <!-- New header for Designation -->
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>111</td>
+                <td>e_one</td>
+                <td>₹100000</td>
+                <td>Arch</td>
+                <td>Senior Architect</td>
+                <td><img src="https://via.placeholder.com/50" alt="Image 1"></td>
+                <td><span class="icon">&#9998;</span></td> <!-- Edit icon -->
+                <td><span class="icon">&#128465;</span></td> <!-- Delete icon -->
+            </tr>
+            <tr>
+                <td>222</td>
+                <td>e_two</td>
+                <td>₹200000</td>
+                <td>Arch</td>
+                <td>Junior Architect</td>
+                <td><img src="https://via.placeholder.com/50" alt="Image 2"></td>
+                <td><span class="icon">&#9998;</span></td> <!-- Edit icon -->
+                <td><span class="icon">&#128465;</span></td> <!-- Delete icon -->
+            </tr>
+            <tr>
+                <td>333</td>
+                <td>e_three</td>
+                <td>₹300000</td>
+                <td>Ed Tech</td>
+                <td>Educational Technologist</td>
+                <td><img src="https://via.placeholder.com/50" alt="Image 3"></td>
+                <td><span class="icon">&#9998;</span></td> <!-- Edit icon -->
+                <td><span class="icon">&#128465;</span></td> <!-- Delete icon -->
+            </tr>
+            <tr>
+                <td>444</td>
+                <td>e_four</td>
+                <td>₹400000</td>
+                <td>Arch</td>
+                <td>Lead Architect</td>
+                <td><img src="https://via.placeholder.com/50" alt="Image 4"></td>
+                <td><span class="icon">&#9998;</span></td> <!-- Edit icon -->
+                <td><span class="icon">&#128465;</span></td> <!-- Delete icon -->
+            </tr>
+            <tr>
+                <td>555</td>
+                <td>e_five</td>
+                <td>₹500000</td>
+                <td>Arch</td>
+                <td>Architectural Manager</td>
+                <td><img src="https://via.placeholder.com/50" alt="Image 5"></td>
+                <td><span class="icon">&#9998;</span></td> <!-- Edit icon -->
+                <td><span class="icon">&#128465;</span></td> <!-- Delete icon -->
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

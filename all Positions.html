@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Positioning Example</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header - Fixed Position */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        /* Space for the fixed header */
+        .header-space {
+            height: 80px;
+        }
+
+        /* Navigation Bar - Sticky Position */
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 80px; /* Sticks below the header */
+            text-align: center;
+        }
+
+        /* Main Content Area */
+        .container {
+            margin: 20px;
+        }
+
+        /* Static Box */
+        .box-static {
+            background-color: lightgray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Relative Positioning Example */
+        .box-relative {
+            background-color: lightgreen;
+            padding: 20px;
+            position: relative;
+            top: 10px;  /* Moves 10px down relative to its normal position */
+            left: 10px; /* Moves 10px right relative to its normal position */
+            margin-bottom: 20px;
+        }
+
+        /* Absolute Positioning Example */
+        .container-relative {
+            position: relative; /* Positioned ancestor for absolute box */
+        }
+
+        .box-absolute {
+            background-color: lightcoral;
+            padding: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+        }
+
+        /* Footer - Fixed Position */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        Fixed Header - KLH Front End Warriors
+    </header>
+
+    <!-- Space for header so content doesn't get hidden -->
+    <div class="header-space"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        Sticky Navigation Bar - Scroll down to see it stick
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Static Box (default behavior) -->
+        <div class="box-static">
+            <h2>Static Box</h2>
+            <p>This is a static box. It follows the normal document flow.</p>
+        </div>
+
+        <!-- Relative Box -->
+        <div class="box-relative">
+            <h2>Relative Box</h2>
+            <p>This box is positioned <strong>relative</strong> to its normal position (10px down, 10px right).</p>
+        </div>
+
+        <!-- Container for Absolute Box -->
+        <div class="container-relative">
+            <!-- Absolute Box -->
+            <div class="box-absolute">
+                <h2>Absolute Box</h2>
+                <p>This box is positioned <strong>absolutely</strong> within its container.</p>
+            </div>
+
+            <div class="box-static">
+                <p>This box is under the absolute box, which is positioned independently.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Fixed Footer - Stays at the bottom of the page
+    </footer>
+
+</body>
+</html>

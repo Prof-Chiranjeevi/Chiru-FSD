@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes & Pseudo Elements</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Input Fields */
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+
+        input[type="number"]:out-of-range {
+            border: 2px solid red;
+        }
+
+        input[type="number"]:in-range {
+            border: 2px solid green;
+        }
+
+        input[type="email"]:invalid {
+            border: 2px solid red;
+        }
+
+        input[type="email"]::placeholder {
+            color: #ff9100;
+        }
+
+        /* Paragraph Styles */
+        p {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #007BFF; /* Blue Left Border */
+            margin: 20px 0;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 24px;
+            color: #007BFF; /* Blue Color for First Letter */
+        }
+
+        p::before {
+            content: "KLU: ";
+            font-weight: bold;
+        }
+
+        p::after {
+            content: " END";
+            font-weight: bold;
+            color: #007BFF; /* Blue Color for END */
+        }
+
+        p::selection {
+            background-color: gray;
+            color: rgb(0, 255, 17);
+        }
+
+        /* Heading Styles */
+        h1 {
+            color: #007BFF; /* Blue Heading */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker Blue on Hover */
+        }
+
+        /* List Styles */
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove padding */
+            margin: 20px 0; /* Space around list */
+        }
+
+        li {
+            margin: 10px 0; /* Space between list items */
+            position: relative; /* Position for the checkmark */
+            padding-left: 25px; /* Space for checkmark and bullet */
+        }
+
+        li:before {
+            content: '✔'; /* Checkmark */
+            position: absolute; /* Position relative to the list item */
+            left: 0; /* Position on the left */
+            color: green; /* Color for the checkmark */
+            font-size: 20px; /* Size of the checkmark */
+        }
+
+        li::marker {
+            content: '•'; /* Custom bullet */
+            color: #007BFF; /* Blue bullet color */
+            font-size: 20px; /* Size of the bullet */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Classes & Pseudo Elements</h1>
+
+    <input type="number" placeholder="Enter Age" min="0" max="18">
+    <input type="email" placeholder="Enter Email">
+
+    <p>
+        Conclusion: The faculty at K L University plays a crucial role in shaping the educational experience of students. Their dedication to excellence, innovative teaching methods, and strong support for student development contribute to making K L University a leading institution in higher education.
+        <br><strong>Key Sentences (a.k.a. Topic Sentences)</strong>
+    </p>
+
+    <ul>
+        <li>Highly qualified faculty with advanced degrees.</li>
+        <li>Commitment to student development and mentorship.</li>
+        <li>Opportunities for research and practical experience.</li>
+        <li>Innovative teaching methods and technology integration.</li>
+        <li>Strong industry connections for internships and placements.</li>
+    </ul>
+
+    <button>Submit</button>
+
+</body>
+</html>

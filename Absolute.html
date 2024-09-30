@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position Example</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 50px; /* Moves 50px down relative to the container */
+            left: 50px; /* Moves 50px right relative to the container */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Absolute Box</div>
+    </div>
+
+</body>
+</html>

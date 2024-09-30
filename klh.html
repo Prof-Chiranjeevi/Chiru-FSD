@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K L University CSE Department Employee List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF; /* Blue header */
+            color: white;
+            font-weight: 700;
+        }
+        td {
+            color: #333;
+        }
+        /* Specific styles for each column */
+        td:nth-child(1) {
+            font-weight: bold; /* Employee ID */
+            color: #007BFF; /* Blue */
+        }
+        td:nth-child(2) {
+            font-weight: 700; /* Name */
+            color: #28a745; /* Green */
+        }
+        td:nth-child(3) {
+            font-style: italic; /* Email */
+            color: #6c757d; /* Gray */
+        }
+        td:nth-child(4) {
+            text-align: center; /* Photo */
+        }
+        td:nth-child(5) {
+            text-align: center; /* Action */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light gray for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #e9f5ff; /* Light blue for odd rows */
+        }
+        tr:hover {
+            background-color: #d1e7fd; /* Light blue on hover */
+        }
+        .icon {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .edit-icon {
+            color: #28a745; /* Green for edit icon */
+        }
+        .delete-icon {
+            color: #dc3545; /* Red for delete icon */
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>K L University</h1>
+        <h2>CSE Department Employee List</h2>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Photo</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Ratna Kumar</td>
+                <td>ratnakumar@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2023/03/aaa-e1680080603127.jpg alt="Ratna Kumar"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Pavan Kumar</td>
+                <td>pavankumar@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2022/04/sdf-e1649412519684.jpg alt="Pavan Kumar"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Chanda</td>
+                <td>chanda@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2022/01/chandr.jpg alt="Chanda Raj"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Trinath Basu</td>
+                <td>trinathbasu@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2023/10/IMG-20231031-WA0022.jpg alt="Trinath Basu"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Chiranjeevi</td>
+                <td>chiranjeevi@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2023/04/chiranjeevi-e1681808437649.jpg alt="Chiranjeevi"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Sree Lakshmi</td>
+                <td>sreelakshmi@klh.edu.in</td>
+                <td><img src=https://klh.edu.in/wp-content/uploads/2022/01/sre.jpg alt="Sree Lakshmi"></td>
+                <td>
+                    <span class="icon edit-icon">&#9998;</span>
+                    <span class="icon delete-icon">&#128465;</span>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <footer>
+        <p>&copy; 2024 K L University. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
